@@ -1,6 +1,4 @@
-import os, concurrent.futures
-import pyoutube
-import pspotify
+import os, concurrent.futures, pyoutube, pspotify
 
  # Caminho base onde as músicas serão salvas (exemplo: pen drive em E:\)
 BASE_DOWNLOAD_PATH = "C:\\Users\\VIPEXGRU029\\Music\\musica_teste"  # Utilize duas barras invertidas para o caminho correto

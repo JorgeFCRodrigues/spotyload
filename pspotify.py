@@ -1,6 +1,13 @@
 import os, re, spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 from dotenv import load_dotenv
+from pathlib import Path
+
+# Cria automáticamente o arquivo .env na raiz do programa
+spotId = input("Digite seu SPOTIFY_CLIENT_ID: ")
+spotScr = input("Digite seu SPOTIFY_CLIENT_SECRET: ")
+arquivo_Env = Path(".env")
+arquivo_Env.write_text("SPOTIFY_CLIENT_ID= '"+ spotId + "'\nSPOTIFY_CLIENT_SECRET= '" + spotScr + "'")
 
 load_dotenv()
 
